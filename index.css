@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(24, 23, 23);
+    color: white;
+}
+
+/* Navbar Section */
+#logo {
+    margin: 9px 175px;
+}
+
+#logo img {
+    height: 50px;
+    width: 70px;
+    margin: 0 5px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 5px;
+    margin: 2px 164px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+    border-radius: 1px;
+    padding: 5px;
+    font-family: 'Archivo Black', sans-serif;
+    margin: 5px 8px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li i {
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+#navbar ul li a:hover {
+    color: #ff0f0f;
+}
+.search-bar {
+    display: flex;
+    margin-left: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px 3px;
+    border-radius: 25px;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+}
+
+.fa-solid {
+    margin-left: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 50px;
+    height: 583px;
+}
+
+#home::before {
+    content: "";
+    background: url('https://img.freepik.com/free-vector/cleaners-with-cleaning-products-housekeeping-service_18591-52055.jpg?size=626&ext=jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 2px;
+    z-index: -1;
+}
+
+
+#head {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 25%;
+    text-align: center;
+}
+
+#head span {
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #ff0f0f;
+}
+
+#home-para {
+    color: rgb(255, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1%;
+}
+/* Services box */
+#Services {
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+}
+#Services img{
+    width: 35%;
+}
+
+.box {
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    padding: 6px 2px;
+    text-align: center;
+    width: 10%;
+}
+
+.box:hover {
+    box-shadow: inset 0 -10px 0 red;
+    background-color: #d6d2d2;
+    color: #0c0c0c;
+}
+
+
+/* Design Services */
+#design-head {
+    margin: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.color{
+    color: #ff0f0f;
+}
+.center{
+    text-align:center;
+}
+
+#design-service {
+    margin: 25px 200px;
+}
+
+/* Form Disign */
+.container {
+    display: grid;
+    grid-template-columns: 880px 700px;
+    margin: 50px 0px;
+}
+
+.container-head {
+    margin: 25px 100px;
+}
+
+.container-body {
+    margin: 50px 100px;
+}
+
+.container-body input {
+    padding: 10px 10px;
+    background: transparent;
+    border: 2px solid gray;
+    box-shadow: 4px 4px 10px -5px #0c0c0c;
+    color: #fff;
+}
+
+.name-email {
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+
+.name-email #name input {
+    width: 100px;
+}
+
+.name-email #email input {
+    width: 230px;
+}
+
+.phone-company {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    margin: 30px 0px;
+}
+
+.phone-company input {
+    width: 230px;
+}
+
+.lable-name {
+    position: relative;
+    bottom: 65px;
+    z-index: -1;
+}
+
+.lable-email {
+    position: relative;
+    bottom: 65px;
+    z-index: -1;
+}
+
+.lable-phone {
+    position: relative;
+    bottom: 65px;
+    z-index: -1;
+}
+
+.lable-Company {
+    position: relative;
+    bottom: 65px;
+    z-index: -1;
+}
+
+#btn-1 {
+    background-color: red;
+    padding: 10px;
+    box-shadow: 4px 4px 10px -5px #0c0c0c;
+    border: none;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Contact Information */
+
+.container-icons {
+    background-color: #121111;
+    border-radius: 20px;
+}
+
+.icons-of-page {
+    display: flex;
+    margin: 0px 50px;
+    margin-top: 10px;
+}
+
+.container-head-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.icons-d {
+    margin: 10px;
+}
+
+.fa-brands {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icons-d:hover {
+    background-color: black;
+    border-radius: 15px;
+    width: auto;
+}
+
+/* instragram icon hover color change css */
+.icons-d:hover .fa-instagram {
+    color: #ff0f0f;
+}
+
+/*All  haeding hover color change css */
+.icons-d:hover .icons-of-social {
+    color: red;
+}
+
+/* twitter icon hover color change css */
+.icons-d:hover .fa-twitter {
+    color: rgb(29 161 242);
+}
+
+/* facebook icon hover color change css */
+.icons-d:hover .fa-facebook {
+    color: rgb(66 103 178);
+}
+
+/* whatsapp icon hover color change css */
+.icons-d:hover .fa-whatsapp {
+    color: #075e54;
+}
+
+
+#instagram,
+#twitter,
+#facebook,
+#whatsapp {
+   text-align: center;
+}
+
+.para-of-icon {
+    text-align: center;
+    margin: 10px;
+    width: auto;
+}   
+
+/* Footer */
+.main-footer{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    color: #fff;
+    align-items: center;
+    padding: 50px 0px;
+    margin-top: 152px;
+}
+.main-footer::before{
+    content: "";
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.s-1 p{
+    margin: 10px;
+}
+.s-2{
+    margin: 15px 0px;
+}
+.s-2 .icons-f{
+    display: flex;
+}
+.s-2 .icons-f i{
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+.s-3{
+    position: relative;
+    bottom:20px;
+}
+.s-3 .Subscribe-footer{
+     margin:10px 0;
+}
+.input-footer input{
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.input-footer input::placeholder {
+    color: #fff;
+    opacity: 1; 
+}
+.input-footer button{
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    margin: 30px;
+}

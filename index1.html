@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index1.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img id="img" src="./careocity-logo.png"
+                alt="producdlogo.img">
+        </div>
+        <ul>
+            <li class="item"><a href="./index.html" id="home-nav">Home</a></li>
+            <li class="item"><a href="#design-service"> About Us</a></li>
+            <li class="item"><a href="./index.html"> Services</a></li>
+            <li class="item"><a href="./index1.html">Login</a></li>
+            <li class="item"><a href="./index2.html">SignUp</a></li>
+        </ul>
+    </nav>
+
+    <div class="container sm">
+        <div class="row mt-5">
+            <div class="col">
+                <form name="myform" >
+                    <h3 class="text-center font-weight-bold text-uppercase text-danger">Login</h3>
+                    <div class="form-group ">
+                        <label class="exampleInputEmail">Email address</label>
+                        <input type="email" name="email" class="form-control" placeholder="Ex. aceson71986@gmail.com">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label class="exampleInputPassward">Passward</label>
+                        <input type="password" name="passward" class="form-control" placeholder="Enter passward">
+                    </div>
+                    <div class="form-check mt-3">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label">Remember me</label>
+                    </div>
+                    <label class="font-weight-bold mt-2">Don't have an account? <a href="signup.html" target="_blank">Sign
+                            up</a></label>
+                    <div id="login-id">
+                        <input type="submit" class="login-btn" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+</body>
+
+</html> 
